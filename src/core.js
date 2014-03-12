@@ -33,6 +33,7 @@ var
 		return letter.toUpperCase();
 	};
 
+// Define methods for all jQuery objects
 jQuery.fn = jQuery.prototype = {
 	// The current version of jQuery being used
 	jquery: version,
@@ -46,6 +47,9 @@ jQuery.fn = jQuery.prototype = {
 	length: 0,
 
 	toArray: function() {
+		// slice.call() is used to convert this jQuery object (which is array-like),
+		// into an actual array. See
+		// https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/slice#Array-like
 		return slice.call( this );
 	},
 

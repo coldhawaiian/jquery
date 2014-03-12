@@ -31,6 +31,6 @@ define([
 	"./exports/global"
 ], function( jQuery ) {
 
-return jQuery;
+	return jQuery;
 
 });
